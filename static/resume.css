@@ -54,6 +54,10 @@ div.centralpane {
     width: 80%;
 }
 
+.heading-mobile {
+    display: none;
+}
+
 div.heading {
     margin-left: 0%;
     padding-left: 10px;
@@ -75,21 +79,28 @@ p {
     font-weight: 300;
 }
 
-#categories {
+.sidebar {
     position: fixed;
-    margin-left: 0%;
-    padding-left: 0%;
+    z-index: 1000;
+    margin-left: 0px;
+}
+
+.sidebar.categories {
+    width:300px;
+    float: left;
+    left: 50px;
+    padding: 0px 0px 0px 0px;
 }
 
 #content {
     width: 70%;
     max-width: 640px;
-    margin-left: 25%;
+    padding-left: 300px;
     display: inline-block;
     vertical-align: top;
 }
 
-#categories h3 {
+.categories h3 {
     text-align: left;
     width: 50%;
     border-style: solid;
@@ -208,4 +219,19 @@ tr {
 
 #Interests > img {
     padding: 20px;
+}
+
+@media all and (max-width: 768px) {
+  div.categories {
+    display: none;
+  }
+  #content {
+    padding-left: 0px;
+  }
+  .heading h1 {
+    text-align: center;
+  }
+  .heading-mobile {
+    display: block;
+  }
 }
