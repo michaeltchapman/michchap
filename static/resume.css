@@ -1,0 +1,211 @@
+/*@import url(http://fonts.googleapis.com/css?family=Poiret+One);*/
+
+@font-face {
+    font-family: "poiret_oneregular";
+    src: url("font/poiretone-regular-webfont.eot");
+    src: url("font/poiretone-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("font/poiretone-regular-webfont.woff") format("woff"),
+    url("font/poiretone-regular-webfont.ttf") format("truetype"),
+    url("font/poiretone-regular-webfont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ralewaylight";
+    src: url("font/raleway-light-webfont.eot");
+    src: url("font/raleway-light-webfont.eot?#iefix") format("embedded-opentype"),
+         url("font/raleway-light-webfont.woff") format("woff"),
+         url("font/raleway-light-webfont.ttf") format("truetype"),
+         url("font/raleway-light-webfont.svg#ralewaylight") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "ralewayregular";
+    src: url("font/raleway-regular-webfont.eot");
+    src: url("font/raleway-regular-webfont.eot?#iefix") format("embedded-opentype"),
+         url("font/raleway-regular-webfont.woff") format("woff"),
+         url("font/raleway-regular-webfont.ttf") format("truetype"),
+         url("font/raleway-regular-webfont.svg#ralewayregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*@import url(http://fonts.googleapis.com/css?family=Raleway:400,300);**/
+
+a, u {
+    text-decoration: none;
+    padding: 0px;
+}
+
+div, a, p, h1, h2, h3, h4, a, td {
+    font-family: 'poiret_oneregular';
+    font-weight: 400;
+    text-align: center;
+}
+
+div.centralpane {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+div.heading {
+    margin-left: 0%;
+    padding-left: 10px;
+
+}
+
+.heading h1 {
+    font-size: 2em;
+    text-align: left;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+#categories {
+    position: fixed;
+    margin-left: 0%;
+    padding-left: 0%;
+}
+
+#content {
+    width: 70%;
+    max-width: 600px;
+    margin-left: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#categories h3 {
+    text-align: left;
+    width: 50%;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+#content h3, h4, p {
+    font-family: 'ralewayregular';
+}
+
+#content h3 {
+    padding: 20px;
+}
+
+#Skills > p {
+    text-align: left;
+}
+
+.entry > p {
+    text-align: left;
+}
+
+.openstack_repos {
+    text-align: left;
+}
+
+.openstack_repos > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#openstack > div {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #E7E7E7;
+}
+
+table {
+    border-collapse:collapse;
+    border-radius: 5px;
+    background-color: #C7C7C7;        
+}
+
+div#personal {
+    text-align: center;
+}
+
+div#personal_descriptions {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#personal > div {
+    display: inline-block;
+    width: 170px;
+    margin-right: 5px;
+    padding: 0px;
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: 20px;
+    /*border-radius: 5px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #C7C7C7;*/
+}
+
+#personal_descriptions > p {
+    text-align: left;
+    display: none;
+}
+
+#personal h4 {
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#personal img {
+}
+
+tr {
+    width: 100%;
+}
+
+#openstack h4 {
+    text-align: center;
+}
+
+#content h4 {
+    font-variant: small-caps;
+}
+
+#Skills {
+    text-align: center;
+}
+
+#Skills > img {
+    padding: 20px;
+}
+
+#Code > a {
+    width: 100%;
+}
+
+#Interests > img {
+    padding: 20px;
+}

@@ -12,33 +12,52 @@
         </div>
 
         <div id="categories">
+            <h3>Skills</h3>
             <h3>Experience</h3>
             <h3>Code</h3>
-            <h3>Skills</h3>
             <h3>Interests</h3>
         </div>
+
         <div id="content">
+
+            <div id="Skills">
+                <h3>Skills</h3>
+                <h2>Professional</h2>
+                <img src="img/python_logo.png" title="Python" width="80" height="80"/>
+                <img src="img/shell_logo.png" title="Shell" width="80" height="80"/>
+                <img src="img/puppet_logo.png" title="Puppet" width="80" height="80"/>
+                <p>My strongest language is comfortably Python. I have used Python in both professional and personal projects, and would regard myself as an intermediate Python programmer. I have done a fair bit of work in bash out of necessity, and feel at home on the unix command line. I have used Puppet professionally in two different roles, both for site-specific deployments and in module development.</p>
+                <h2>Hobbyist</h2>
+                <img src="img/ruby_logo.png" title="Ruby" width="80" height="80"/>
+                <img src="img/javascript_logo.png" title="Javascript" width="80" height="80"/>
+                <img src="img/java_logo.png" title="Java" width="80" height="80"/>
+                <img src="img/cpp_logo.png" title="C/C++" width="80" height="80"/>
+                <img src="img/csharp_logo.png" title="C#" width="80" height="80"/>
+                <p>I have used Ruby a little to interact with Puppet, and would regard myself as a beginner. I have played with the web stack for personal projects, but have not used it professionally. I used Java, C and C++ at university and have worked with all three on small personal projects. I have written a couple of small games in C# using the XNA framework.</p>
+            </div>
+
             <div id="Experience">
                 <a name='Experience'></a>
+                <h3>Experience</h3>
                 <div class="entry">
-                    <h3>Cisco Systems</h3>
+                    <h2>Cisco Systems</h2>
                     <h4>Software Engineer, 2013-</h4>
                     <p>I worked on Cisco’s distribution of Openstack. This was originally a fork of various upstream modules from Puppetlabs and the community project puppet-openstack. Over the course of six months I worked to align with the upstream project, helped rewrite the top level manifests to allow more flexibility by converting to a yaml based data model, and created an automatic testing framework, first via vagrant and recently rewritten based on the openstack-infra stack. I also wrote puppet modules that configured the networking component of Openstack (Neutron) to use Cisco equipment, and through the course of doing so was required to make some fixes to the Cisco Neutron driver itself. I was made a core reviewer on the puppet-openstack project in mid 2013.</p>
                </div>
                <div class="entry">
-                   <h3>ANU Supercomputing Facility</h3>
+                   <h2>ANU Supercomputing Facility</h2>
                    <h4>Data Systems Specialist, 2010-2013</h4>
                     <p>My work was primarily in the deployment and administration of Openstack clusters, Windows HPC clusters and Hadoop clusters as part of the cloud services team at ANUSF. The role also involved some work in the server room such as racking equipment and patching, along with related general data-centre administration tasks such as switch configuration and network management.</p>
                     <p>The Openstack work involved first setting up hardware and deployment services (TFTP, PXE) and subsequently creating a manageable and scalable deployment system, for which I used puppet (from Puppet Labs) and fabric (a Python remote ssh wrapper) in conjunction with kickstart. I performed Openstack cluster upgrades from the Cactus release through to the Folsom release. This involved a lot of work manually correcting database state in MySQL.</p>
                      <p>I created an environment module for one of the supercomputing environments that allowed users to create their own Hadoop clusters running within a batch scheduling environment with a minimal amount of work. This was primarily targeted at allowing gene sequencing researchers to run their jobs on a supercomputer using the crossbow and bowtie frameworks instead of needing to get gene data out to a public cloud.</p>
                 </div>
                 <div class="entry">
-                    <h3>ANU Research School of Computer Science</h3>
+                    <h2>ANU Research School of Computer Science</h2>
                     <h4>Academic Assistant, 2010</h4>
                     <p>My task was broadly investigating Hadoop and MS Dryad platforms for machine learning applications within a much larger grant. I provided the groundwork upon which a masters student was to base his extensions to the Hadoop framework. I deployed a Dryad cluster and conducted an assessment of how it compared to Hadoop.</p>
                 </div>
                 <div class="entry">
-                    <h3>ANU Research School of Computer Science</h3>
+                    <h2>ANU Research School of Computer Science</h2>
                     <h4>Course Tutor, 2010</h4>
                     <p>I tutored two first year courses, with most of the coursework in Java. Haskell was used at the beginning as a vehicle for teaching data structures and recursion (and confusing freshmen).</p>
                 </div>
@@ -47,9 +66,6 @@
             <div id="Code">
                 <a name='Code'></a>
                 <h3>Code</h3>
-
-
-
                 <div id="openstack">
                   <h2>Openstack Contributions</h2>
                   <div class="openstack_repos">
@@ -89,36 +105,40 @@
                     </table>
                   </div>
                 </div>       
-
-
                 <div>
                     <h2>Github profile</h2>
-                    <a href='https://github.com/michaeltchapman'>https://github.com/michaeltchapman</a>
-                    <h3>Personal Repos</h3>
+                    <a href='https://github.com/michaeltchapman'>
+                        <img src="img/github_logo.png" title="michaeltchapman" width="80" height="80"/>
+                    </a>
                     <div id="personal">
-                    {% for name, repo in personal_repos.iteritems() %}
-                    <div id="{{ repo.name }}">
-                        <h4>{{ repo.name }}</h4>
-                        {% for language in repo.languages %}
-                        <img src="img/{{ language }}_logo.png" title="{{ language }}" width="50" height="50"/>
-                        {% endfor %}
-                    </div>
-                    {% endfor %}
-                    </div>
-                    <div id="personal_descriptions">
-                    {% for name, repo in personal_repos.iteritems() %}
-                        <p id="personal_description_{{ repo.name }}">{{ repo.description }}<p>
-                    {% endfor %}
+                        <h4>Personal Repos</h4>{% for name, repo in personal_repos.iteritems() %}<div id="{{ repo.name }}"><a href="{{ repo.html_url }}"><h4>{{ repo.name }}</h4>{% for language in repo.languages %}<img src="img/{{ language }}_logo.png" title="{{ repo.description }}" width="50" height="50"/>{% endfor %}</a></div>{% endfor %}
                     </div>
                  </div>
-            </div> 
-            
-            <div id="Skills">
-                <h3>Skills</h3>
             </div>
-            
+
             <div id="Interests">
                 <h3>Interests</h3>
+                <a href="http://blender.org">
+                    <img src="img/blender_logo.png" title="Blender" width="80" height="80"/>
+                </a>
+                <a href="http://www.guitar-pro.com/en/index.php">
+                    <img src="img/gpro_logo.png" title="Guitar Pro" width="80" height="80"/>
+                </a>
+                <a href="http://www.openstack.org">
+                    <img src="img/openstack_logo.png" title="Openstack" width="80" height="80"/>
+                </a>
+                <a href="http://en.wikipedia.org/wiki/Microsoft_XNA">
+                    <img src="img/xna_logo.png" title="XNA" width="80" height="80"/>
+                </a>
+                <a href="http://jmonkeyengine.org/">
+                    <img src="img/jme_logo.png" title="JMonkeyEngine" width="80" height="80"/>
+                </a>
+                <a href="http://www.panda3d.org/">
+                    <img src="img/panda_logo.png" title="Panda3D" width="80" height="80"/>
+                </a>
+                <a href="http://www.unity3d.com/">
+                    <img src="img/unity_logo.png" title="Unity" width="80" height="80"/>
+                </a>
             </div>
         </div>
     </div>
