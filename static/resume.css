@@ -120,6 +120,24 @@ p {
     padding: 20px;
 }
 
+#Profile {
+    display: inline:block;
+    text-align: center;
+}
+
+.profile {
+    display: inline-block;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.mugshot > img{
+    border-style: solid;
+    border-radius: 5px;
+    border-width:  5px;
+    border-color:  #C7C7C7;
+}
+
 #Skills > p {
     text-align: left;
 }
@@ -129,7 +147,6 @@ p {
 }
 
 .openstack_repos {
-    text-align: left;
 }
 
 .openstack_repos > div {
@@ -138,7 +155,6 @@ p {
 }
 
 #openstack > div {
-    width: 49%;
     display: inline-block;
     vertical-align: top;
     margin-top: 20px;
@@ -151,7 +167,7 @@ tr:nth-child(even) {
 table {
     border-collapse:collapse;
     border-radius: 5px;
-    background-color: #C7C7C7;        
+    background-color: #C7C7C7;
 }
 
 div#personal {
@@ -233,5 +249,15 @@ tr {
   }
   .heading-mobile {
     display: block;
+  }
+  .profile {
+    width: 100%;
+  }
+  .openstack_repos {
+    width: 100%;
+  }
+  table.center {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -14,10 +14,18 @@
             <h1>Michael Chapman</h1>
         </div>
             <div>
-                <h3>Skills</h3>
-                <h3>Experience</h3>
-                <h3>Code</h3>
-                <h3>Interests</h3>
+                <a href="#Skills">
+                    <h3>Skills</h3>
+                </a>
+                <a href="#Experience">
+                    <h3>Experience</h3>
+                </a>
+                <a href="#Code">
+                    <h3>Code</h3>
+                </a>
+                <a href="#Interests">
+                    <h3>Interests</h3>
+                </a>
             </div>
         </div>
 
@@ -25,6 +33,25 @@
         <div class="heading-mobile">
             <h1>Michael Chapman</h1>
         </div>
+            <div id="Profile">
+                <h3>Profile</h3>
+                <div class='profile'>
+                    <a href="mailto:woppin@gmail.com">
+                        <img src="img/mail.png" width="24" height="16" title="woppin@gmail.com">
+                        <p>woppin@gmail.com</p>
+                    </a>
+                </div>
+                <div class='profile mugshot'>
+                    <img src="img/mugshot.png" width="100" height="100" title="Michael Chapman">
+                </div>
+                <div class='profile'>
+                    <a href="https://twitter.com/mich_chap">
+                        <img src="img/twitter.png" width="20" height="20" title="@mich_chap">
+                        <p>@mich_chap</p>
+                    </a>
+                </div>
+                <p>I'm a software engineer from Sydney, Australia, with experience in deployment tools, config management and cloud orchestration. I do both contracted and employed work on any and all of these things, and have been working professionally since graduation three years ago. I like to mess around with game development in my spare time, and also enjoy trying out new languages. If you'd like to work with me on your next project, I'd love to chat.</p>
+            </div>
 
             <div id="Skills">
                 <h3>Skills</h3>
@@ -32,7 +59,7 @@
                 <img src="img/python_logo.png" title="Python" width="80" height="80"/>
                 <img src="img/shell_logo.png" title="Shell" width="80" height="80"/>
                 <img src="img/puppet_logo.png" title="Puppet" width="80" height="80"/>
-                <p>My strongest language is comfortably Python. I have used Python in both professional and personal projects, and would regard myself as an intermediate Python programmer. I have done a fair bit of work in bash out of necessity, and feel at home on the unix command line. I have used Puppet professionally in two different roles, both for site-specific deployments and in module development.</p>
+                <p>My strongest language is Python. I have used Python in both professional and personal projects, and would regard myself as an intermediate Python programmer. I have done a fair bit of work in bash out of necessity, and feel at home on the unix command line. I have used Puppet professionally in two different roles, both for site-specific deployments and in module development.</p>
                 <h2>Hobbyist</h2>
                 <img src="img/ruby_logo.png" title="Ruby" width="80" height="80"/>
                 <img src="img/javascript_logo.png" title="Javascript" width="80" height="80"/>
@@ -81,7 +108,7 @@
                     <div>
                       <h4>Openstack Commits</h4>
                     </div>
-                    <table>
+                    <table class="center">
                       <col style="width: 80%"/>
                       <col style="width: 10%"/>
                       {% for repo in os_repos %}
@@ -99,7 +126,7 @@
                     <div>
                       <h4>Stackforge Commits</h4>
                     </div>
-                    <table>
+                    <table class="center">
                         <col style="width: 80%"/>
                         <col style="width: 10%"/>
                       {% for repo in sf_repos %}
