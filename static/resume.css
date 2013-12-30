@@ -42,6 +42,10 @@ a, u {
     padding: 0px;
 }
 
+a:visited{
+    color:blue;
+}
+
 div, a, p, h1, h2, h3, h4, a, td {
     font-family: 'poiret_oneregular';
     font-weight: 400;
