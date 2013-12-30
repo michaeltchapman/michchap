@@ -12,7 +12,7 @@ fi
 
 if [ ! -d "/root/michchap" ];
 then
-    cd /root; git clone https://github.com/michaeltchapman/michchap
+    cd /root; git clone https://github.com/michaeltchapman/michchap; mkdir /root/michchap/repos; mkdir /root/michchap/clones; cd /root/michchap; python download.py
 fi
 
 cd /root/michchap
