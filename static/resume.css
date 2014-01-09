@@ -42,8 +42,12 @@ a, u {
     padding: 0px;
 }
 
+a:link{
+    color: #676767;
+}
+
 a:visited{
-    color:blue;
+    color: #676767;
 }
 
 div, a, p, h1, h2, h3, h4, a, td {
@@ -104,6 +108,9 @@ p {
     vertical-align: top;
 }
 
+.categories a {
+    text-decoration: none;
+}
 .categories h3 {
     text-align: left;
     width: 50%;
