@@ -158,11 +158,13 @@ p {
 }
 
 .openstack_repos {
+    width:45%;
 }
 
 .openstack_repos > div {
     display: inline-block;
     vertical-align: top;
+    width:100%;
 }
 
 #openstack > div {
@@ -179,6 +181,7 @@ table {
     border-collapse:collapse;
     border-radius: 5px;
     background-color: #C7C7C7;
+    width: 100%;
 }
 
 div#personal {
@@ -226,6 +229,10 @@ tr {
 
 #openstack h4 {
     text-align: center;
+}
+
+#openstack_logo {
+    width: 100%;
 }
 
 #content h4 {
